@@ -1,6 +1,6 @@
 # farmer_crop_care
 
-A new Flutter project.
+A Flutter project.
 
 ## Getting Started
 
