@@ -1,0 +1,31 @@
+{
+  "appTitle": "Crop Care",
+  "dashboard": "Dashboard",
+  "farms": "Farms",
+  "schedule": "Schedule",
+  "settings": "Settings",
+  "login": "Login",
+  "signUp": "Sign Up",
+  "welcome": "Welcome back, Farmer!",
+  "addFarm": "Add Farm",
+  "importSchedule": "Import Schedule",
+  "addTask": "Add Task",
+  "manualTask": "Add Manual Task",
+  "selectFarm": "Select Farm",
+  "date": "Date",
+  "description": "Description",
+  "save": "Save",
+  "cancel": "Cancel",
+  "noTasks": "No tasks scheduled.",
+  "taskAdded": "Task added successfully!",
+  "pickFile": "Pick Excel or PDF File",
+  "parsing": "Parsing...",
+  "foundTasks": "Found {count} tasks",
+  "@foundTasks": {
+    "placeholders": {
+        "count": {}
+    }
+  },
+  "localWeather": "Local Weather",
+  "rainChance": "Rain Chance"
+}
