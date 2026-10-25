@@ -1,70 +1,60 @@
-# Farmer Crop Care
+# Farmcare — Farmer Crop Care
 
-Farmer Crop Care is a mobile application designed to assist farmers in managing and caring for their crops effectively. Built with Flutter, this app offers resources, tools, and guidance to streamline farming operations and improve agricultural productivity.
+A Flutter farm-management application with farm records, task scheduling, weather information, and support for English, Hindi, and Gujarati.
 
----
+## Project features
 
-## Features
+- Login and signup through Supabase
+- Farm records and scheduled tasks
+- Schedule import from files
+- Local notifications
+- Local database storage and synchronization
+- Weather information
+- Language settings for English, Hindi, and Gujarati
 
-- **Crop Health Monitoring:** AI-powered tools to help identify and diagnose crop health issues.
-- **Real-time Weather Updates:** Stay updated with accurate weather predictions to plan farming activities.
-- **Farming Tips & Tricks:** Access expert tips for better crop growth and management.
-- **Resource Directory:** Important links and resources for agricultural best practices.
-- **Localization Support:** Multiple language support for users worldwide.
+These features are represented in the source; this README does not claim that every platform or integration has been tested.
 
----
+## Technology
 
-## Getting Started
+Flutter, Dart, Riverpod, Supabase, and a local database.
 
-Follow the steps below to set up and run the Farmer Crop Care app locally:
+## Local setup
 
-1. **Ensure Flutter is Installed:**
-   - Download and install Flutter SDK from [Flutter's official documentation](https://docs.flutter.dev/get-started/install).
-2. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/patelmup1/Farmcare.git
-   ```
-3. **Open the Project in Your IDE:**
-   - Use an IDE like Visual Studio Code or Android Studio.
-4. **Install Dependencies:**
-   - Run the command below in the terminal to fetch the dependencies:
-     ```bash
-     flutter pub get
-     ```
-5. **Run the App:**
-   - Launch an emulator or connect a physical device.
-   - Run the following command to start the app:
-     ```bash
-     flutter run
-     ```
+Install the Flutter SDK and platform tooling, then clone the project:
 
----
+```bash
+git clone https://github.com/patelmup1/Farmcare.git
+cd Farmcare
+flutter pub get
+```
 
-## Contributing
+Before running, configure a Supabase project you control. The current connection values are in [lib/main.dart](lib/main.dart); replace them with your project's URL and public anon key. Review [supabase_schema.sql](supabase_schema.sql) and apply the schema in your own project. Review access policies before storing real data.
 
-We welcome contributions to make Farmer Crop Care even better! To contribute:
+Start an emulator or connect a supported device:
 
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Commit your changes and open a pull request.
+```bash
+flutter run
+```
 
----
+## Repository guide
 
-## Support
+- [lib/features](lib/features): authentication, farms, schedules, weather, and settings
+- [lib/core](lib/core): providers, database, synchronization, and notifications
+- [lib/l10n](lib/l10n): translations
+- [pubspec.yaml](pubspec.yaml): dependencies and assets
+- [test](test): Flutter tests
 
-For any issues or suggestions, please feel free to raise an issue in this repository or contact us directly at [support email address].
+## Development checks
 
----
+```bash
+flutter analyze
+flutter test
+```
+
+## Feedback
+
+Use [GitHub Issues](https://github.com/patelmup1/Farmcare/issues) for bugs and suggestions. Include the device, operating system, and steps to reproduce.
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
-
----
-
-## Acknowledgments
-
-- Built with ❤️ using Flutter.
-- Inspired by the dedication of farmers worldwide.
-
-For more details on Flutter development, refer to the [Flutter documentation](https://docs.flutter.dev/). 
+No LICENSE file is currently included in this repository. Licensing terms need to be specified by the maintainer.
